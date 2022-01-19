@@ -1,0 +1,6 @@
+package com.wings.wings_dating_app_flutter
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
