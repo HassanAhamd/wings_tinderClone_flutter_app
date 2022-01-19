@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wings.wings_dating_app_flutter">
    <application
-        android:label="wings_dating_app_flutter"
+        android:label="Wings"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
