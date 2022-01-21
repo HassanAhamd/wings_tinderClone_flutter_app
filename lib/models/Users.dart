@@ -5,10 +5,11 @@ final int id;
 final String name;
 final int age;
 final List<String> imageUrls;
+final List<String> interests;
 final String bio;
 final String jobTitle;
 
-const User( this.id, this.name, this.age, this.imageUrls, this.bio, this.jobTitle);
+const User(this.id, this.name, this.age, this.imageUrls, this.bio, this.jobTitle, this.interests);
 
   @override
   List<Object?> get props =>  [
@@ -17,7 +18,8 @@ const User( this.id, this.name, this.age, this.imageUrls, this.bio, this.jobTitl
     age,
     imageUrls,
     bio,
-    jobTitle
+    jobTitle,
+    interests
   ];
 
   static List<User> users = [
@@ -33,7 +35,13 @@ const User( this.id, this.name, this.age, this.imageUrls, this.bio, this.jobTitl
         'https://scontent.flhe9-1.fna.fbcdn.net/v/t1.6435-9/s960x960/83719218_2505638093037024_2712968254896209920_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=84a396&_nc_eui2=AeG0_HcV1vIvvbbnTBeXGATeZjBklAnqRkNmMGSUCepGQ544Z0J7IH6R6j_sj8v7Z8UhbLECPkAtoWPII8UpVl2a&_nc_ohc=kLhggE8yYyMAX9OQM3G&_nc_oc=AQlxFWP0ljzFjc7qece2Yf5D2Hg-YxE6vDJGalTjtDCu6WadzzNp-C8c8K1jayP8ZZE&_nc_ht=scontent.flhe9-1.fna&oh=00_AT-q1WPq8HUIMetim9zzJVWEwRTeaUCAoIViQukDFxjHaQ&oe=620C03B1',
         ],
         'Love Programming and love to listen Music',
-        'Software Engineer'
+        'Software Engineer',
+        [
+          'Developing',
+          'Gaming',
+          'Music',
+          'Robotics',
+        ],
     ),
     User(
         1,
@@ -47,7 +55,12 @@ const User( this.id, this.name, this.age, this.imageUrls, this.bio, this.jobTitl
         'https://scontent.flhe9-1.fna.fbcdn.net/v/t1.6435-9/49464979_2105691199499149_3085294094998568960_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeHwjz1781daq8bIkIs_CU9MyqayCnw6jhTKprIKfDqOFDYWlvekznbLqOsFTBTSMrMyLFQN03eIttwsXUkeE4wf&_nc_ohc=SKQ-YhXk2_cAX8m98zJ&_nc_ht=scontent.flhe9-1.fna&oh=00_AT9ejJTZAmx-S4Gr8oC8K5A23oVOmR1hIzgUNHHAGfCv-Q&oe=620BDEC2',
         ],
         'Love making Videos',
-        'YouTuber'
+        'YouTuber',
+      [
+        'Film Making',
+        'Acting',
+        'Rest',
+      ],
     ),
     User(
         2,
@@ -61,7 +74,72 @@ const User( this.id, this.name, this.age, this.imageUrls, this.bio, this.jobTitl
         'https://scontent.flhe9-1.fna.fbcdn.net/v/t1.18169-9/11890969_911664522235162_2813939620157200340_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=cdbe9c&_nc_eui2=AeEad4N9-FlktWlUl_3J5iYDZktq9Mj1O8tmS2r0yPU7y1kws_pU6RrIT_iLGJK4zd0jFhMPVFo3T64rDfpMkpCC&_nc_ohc=QO5Ft64NqPwAX8iGTKa&tn=nscoSL9XYIw9TnpI&_nc_ht=scontent.flhe9-1.fna&oh=00_AT_6yBza3baszp_f4OGGMs4nSGmqiVrZ_K5qZzc565d6iw&oe=620DCBA3',
         ],
         'Love being free',
-        'Free Agent'
+        'Free Agent',
+      [
+        'Relaxing',
+        'Gaming',
+        'Music',
+        'Party',
+      ],
+    ),
+    User(
+        3,
+        'Shahbaz Khan',
+        26,
+        [
+          'https://scontent.flhe9-1.fna.fbcdn.net/v/t39.30808-6/s206x206/266971499_3226344480930375_2593507138838274045_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=da31f3&_nc_eui2=AeECVwvLdH08zb9fgUDk7wTNaS6bVQciDxxpLptVByIPHLzCmPmkNbYliEzds64RQXlIemKX6T8iWaKoUMAQeJd5&_nc_ohc=gBrFH30rv8sAX8er8yP&_nc_oc=AQlNmzWeCg6b4RTsTXwFricgfgdb0Nh-vTMmrSGDCn1ERpZQvRTiBJ0JoYXEhY0Wv0o&_nc_ht=scontent.flhe9-1.fna&oh=00_AT9FjmZ8SjYWp9P2bZ9_Nmc1RoHEt3yoybuFc4mTAL17SA&oe=61EEAE96',
+          'https://scontent.flhe9-1.fna.fbcdn.net/v/t39.30808-6/p206x206/269598276_3232546930310130_5429787631792780227_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=da31f3&_nc_eui2=AeHc1-vmsVhjB4PiGG6yOlt6kEn5c-i9fG-QSflz6L18b72stxG6S9pFvB8I48pJkfIU5dwjU1dIjXTulJTJyl1I&_nc_ohc=zZzi4zk38HsAX--EVoR&tn=nscoSL9XYIw9TnpI&_nc_ht=scontent.flhe9-1.fna&oh=00_AT8TOQgQ_H5tNkR-QpptEK3ZBAIbXt4bl3PGWjHOKUuiug&oe=61F0033D',
+          'https://scontent.flhe9-1.fna.fbcdn.net/v/t1.6435-9/s206x206/123511574_2914292488802244_4499761074723331369_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=da31f3&_nc_eui2=AeHKvnirjvJlHsojR9M_ak7ZZNAFVxAlElRk0AVXECUSVGwWDMIj2QJZ8GN_WFARvAiy9C6EignqGj0RQcvwWxX7&_nc_ohc=PIA_dddH3RgAX_Zecps&tn=nscoSL9XYIw9TnpI&_nc_ht=scontent.flhe9-1.fna&oh=00_AT9knO-_Rqi6N8Xmwcu3N3zZYO3bm46iXXRMiXkgLBmsNA&oe=620FBC40',
+          'https://scontent.flhe9-1.fna.fbcdn.net/v/t1.6435-9/p206x206/117382265_2832887560276071_4802853003312299250_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=da31f3&_nc_eui2=AeHSrvblVGm7dLeaJjcKm2HbNahH1fF-6ec1qEfV8X7p5w7XVvY9Ff6MV2yF-YSnoy3hoQCoqzAkddx6ryeB6CV5&_nc_ohc=ZT3WHK7kM3MAX_960uQ&tn=nscoSL9XYIw9TnpI&_nc_ht=scontent.flhe9-1.fna&oh=00_AT_hSLHsW83ygsJ_Fg_DUpoZIkTUuEsEqrO-HJNOAbC9vg&oe=6211D8B7',
+          'https://scontent.flhe9-1.fna.fbcdn.net/v/t1.6435-9/p206x206/79833049_2626293467602149_2511152010854662144_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=da31f3&_nc_eui2=AeEaN05qms6yQZBoBugd8lEBMhKhq0QZcY8yEqGrRBlxjwW9HfsOJuZY-4X9Pstztvh-cxmM8BvXSJ-Gz5SER2QK&_nc_ohc=3cr78AaLb5sAX-XWe-S&_nc_ht=scontent.flhe9-1.fna&oh=00_AT8vi3n-ocjJ2hDUnU0r8uyLOny0Xyx-MER28bE8m13aug&oe=6211C279',
+        ],
+        'Love being free',
+        'Banker',
+      [
+        'Fashion',
+        'Cloths',
+        'Girls',
+      ],
+    ),
+    User(
+        4,
+        'Ch Hamza',
+        29,
+        [
+          'https://scontent.flhe9-1.fna.fbcdn.net/v/t31.18172-8/27628711_747321205460849_3982449387026141898_o.jpg?_nc_cat=103&ccb=1-5&_nc_sid=a4a2d7&_nc_eui2=AeE-KA1opoA3Aupj3tWruOuBwVGKUfwA6vrBUYpR_ADq-pYqliAQO4bL-DfkaeKn2oZwQAWoIneE8EKXKS8tHHsQ&_nc_ohc=meji6ime7wYAX_swz9x&_nc_ht=scontent.flhe9-1.fna&oh=00_AT8yRn1OTJKl4_KTVx42QNVenJzvn_XeLmDNeINVRD5ROQ&oe=620EEC75',
+          'https://scontent.flhe9-1.fna.fbcdn.net/v/t1.18169-9/15356571_567162953476676_8789593474644654066_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=a4a2d7&_nc_eui2=AeHO1upMw7iVplvneW0phWcXMxgVZo3kf2szGBVmjeR_a6EWrj7E8ls41xOZKwWvdsX-7_Es8egn6OMeEBCdKkUP&_nc_ohc=zQSlWln6aJEAX9QeFDM&tn=nscoSL9XYIw9TnpI&_nc_ht=scontent.flhe9-1.fna&oh=00_AT9QTskg8CLQ5UKD9JT_Xuet2uW1DmR0Tzt-FPSQDi_yZA&oe=62109EC3',
+          'https://scontent.flhe9-1.fna.fbcdn.net/v/t1.6435-9/74696638_1146511188875180_2164315526048776192_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=a4a2d7&_nc_eui2=AeFEScpfthSqGxTj34CppcL6dDx78wAI3HV0PHvzAAjcdciAFJnb9lfR1a4MfyUAQCk9LlQCCQBQkFz9DR-NnfGs&_nc_ohc=eqSQMv9BTFoAX_pdAnF&_nc_ht=scontent.flhe9-1.fna&oh=00_AT-w7swVQxFS8EMx3k-dNCjjwffCtsNyMtCd8sZgzLwi1g&oe=620F9292',
+          'https://scontent.flhe9-1.fna.fbcdn.net/v/t1.6435-9/76765501_1146511205541845_5715273754850885632_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=a4a2d7&_nc_eui2=AeEZpvmDP-vMNZtXFx1s7lhQZXxqZuXm0eVlfGpm5ebR5b9UWynyfNqOgajJMLgMCBKRuifdhlY9m4TzmRxtHpzo&_nc_ohc=g_1smG2UPaYAX9uIdnP&_nc_oc=AQmHbwQ6syyCaEjMGe7M5VMgfykssW8BdaBGav_3PK1KgV2D5UJWkgtZbymPqM3qTlQ&_nc_ht=scontent.flhe9-1.fna&oh=00_AT8dYRM3XO7f7z1P7zpu8mPjRAeX6lLUjAb4IDWT9Iwv3g&oe=621128F4',
+          'https://scontent.flhe9-1.fna.fbcdn.net/v/t1.6435-9/73198328_1146511192208513_73312854064758784_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=a4a2d7&_nc_eui2=AeEiXCiWHOOuqB15wnv3YlC6cWYgDaS4GGtxZiANpLgYa78CEEKScTZuA2NYN9EVBXxm4jGXsMoNlX0A5GXLoQ8r&_nc_ohc=gq3War65aCYAX8zPJiY&_nc_ht=scontent.flhe9-1.fna&oh=00_AT_1u8IKGj_qk5ST-aBCGM6s646TXiVu40FdpoL0YoFyKA&oe=6210E5AD',
+        ],
+        'Love being free',
+        'BussinerMan',
+      [
+        'Earning',
+        'Music',
+        'Remixs',
+        'Gambling',
+        'Party',
+      ],
+    ),
+    User(
+        5,
+        'Faaz Hussain',
+        25,
+        [
+          'https://scontent.flhe9-1.fna.fbcdn.net/v/t39.30808-6/s640x640/267803828_2148915735257684_6865708874099354452_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeF87-ywaNzL5c_h1pL_GB5nXdeGoKbK5N9d14agpsrk36PD-KavGz_L1PscF3NtbmnBaUprgjM59PlyPiVgaAbV&_nc_ohc=8IaE1uaJ5O8AX_R4cd5&_nc_ht=scontent.flhe9-1.fna&oh=00_AT-XDHDv7zxF6L4-Xv_BmMqgOWb4DpWJz1s5aFiwUzjQxg&oe=61EFB721',
+          'https://scontent.flhe9-1.fna.fbcdn.net/v/t1.6435-9/90272317_1597900217025908_3451889374986240000_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeEQs8Vv_RCKlim3hHYFP0VI5bGOcf-7bhLlsY5x_7tuEv9R6L1TJSSemhRxSqoI7JwQB4nSB7zDF3aK67pl1k6c&_nc_ohc=zTyN2qw-1UcAX8HfnRX&_nc_ht=scontent.flhe9-1.fna&oh=00_AT8Xy0xNoFIN5yhYnZSelOAmFicgyXGBMW8UyYbZO4gMvQ&oe=6210642C',
+          'https://scontent.flhe9-1.fna.fbcdn.net/v/t39.30808-6/p206x206/252384338_2117568675059057_4769915302499506350_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=da31f3&_nc_eui2=AeHc6TR_I2Fq8s7xcgJ2HycfIr_cIjRZnD4iv9wiNFmcPoY80j1TMRGXKk0x5bJ2iIvOESfwaE28zl3fprsFOK5e&_nc_ohc=siQRlONsz9cAX_LWrGe&_nc_ht=scontent.flhe9-1.fna&oh=00_AT-Fj8vcXPhFVWuGMnaWtVAmz2Uz492LozM6NQMeu0kxEw&oe=61EF6246',
+          'https://scontent.flhe9-1.fna.fbcdn.net/v/t1.6435-9/c0.34.206.206a/p206x206/144827762_1898781280271132_8137716630440273310_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=da31f3&_nc_eui2=AeFAiUTQB91PPt_Ae2DKLB4U6oaCrZ2p1QHqhoKtnanVASw0g3ldB1hYDo58aLvFn1nHtq9wgoABYcY1a5iCHlcI&_nc_ohc=6Zc7_DZq8dkAX9X16tj&_nc_ht=scontent.flhe9-1.fna&oh=00_AT9bQSDLOhc3DWrIpu3RXZIOJbI3mRN81x1WfmdTWhpXeg&oe=620EEDD6',
+          'https://scontent.flhe9-1.fna.fbcdn.net/v/t1.6435-9/s206x206/98363274_1650562268426369_3673941499176812544_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=da31f3&_nc_eui2=AeFO-1hCCK-BVCWB1NhM-IrEwAo6cmqcAPPACjpyapwA82XqB1ML0GcdTS09nuTS9DfEQCoPU2y2QNVI5hhpsKFv&_nc_ohc=TDHgOh2KfsIAX-VgUnu&_nc_ht=scontent.flhe9-1.fna&oh=00_AT8jd4yhKmx0EgLKYDjmixBITnPf2jrVAzM8OGZdIG0fLg&oe=6211B9E6',
+        ],
+        'Love being free',
+        'Programmer',
+      [
+        'Developing',
+        'Gaming',
+        'Music',
+      ],
     ),
   ];
 }
