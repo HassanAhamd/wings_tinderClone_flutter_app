@@ -5,7 +5,7 @@ import 'package:wings_dating_app_flutter/screens/UserProfileScreen.dart';
 import 'package:wings_dating_app_flutter/swipe_blocks/Swipe_bloc.dart';
 import 'package:wings_dating_app_flutter/swipe_blocks/Swipe_event.dart';
 import 'package:wings_dating_app_flutter/swipe_blocks/Swipe_state.dart';
-import 'package:wings_dating_app_flutter/widget/AppBar.dart';
+import 'package:wings_dating_app_flutter/widget/CustomAppBar.dart';
 import 'package:wings_dating_app_flutter/widget/ChoiceButton.dart';
 import 'package:wings_dating_app_flutter/widget/UserCard.dart';
 
@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(),
+      appBar: CustomAppBar(title: "DISCOVER",hasActions: true,),
       body: BlocBuilder<SwipeBloc, SwipeState>(
         builder: (context,state){
           if (state is SwipeLoading){

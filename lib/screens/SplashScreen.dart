@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:wings_dating_app_flutter/screens/onboarding_screens/onBoardingScreens.dart';
 
 import 'HomeScreen.dart';
 
@@ -17,7 +18,7 @@ class _MySplashScreenState extends State<SplashScreen> {
             ()=>Navigator.pushReplacement(context,
             MaterialPageRoute(builder:
                 (context) =>
-                HomeScreen()
+                    onBoardingScreens()
             )
         )
     );
