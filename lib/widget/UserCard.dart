@@ -67,10 +67,10 @@ class UserCard extends StatelessWidget {
                     .copyWith(
                     color: Colors.white, fontWeight: FontWeight.normal),),
                 Row(children: [
-                  UserImageSmall(user.imageUrls[1]),
-                  UserImageSmall(user.imageUrls[2]),
-                  UserImageSmall(user.imageUrls[3]),
-                  UserImageSmall(user.imageUrls[4]),
+                  UserImageSmall(imageUrl: user.imageUrls[1],),
+                  UserImageSmall(imageUrl: user.imageUrls[2],),
+                  UserImageSmall(imageUrl: user.imageUrls[3],),
+                  UserImageSmall(imageUrl: user.imageUrls[4],),
                   SizedBox(width: 5,),
                   Container(height: 25,width: 25,decoration: BoxDecoration(
                     shape: BoxShape.circle,

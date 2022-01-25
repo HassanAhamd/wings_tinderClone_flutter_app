@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:step_progress_indicator/step_progress_indicator.dart';
 import 'package:wings_dating_app_flutter/widget/CustomButton.dart';
 import 'package:wings_dating_app_flutter/widget/CustomCheckBox.dart';
 import 'package:wings_dating_app_flutter/widget/CustomTextField.dart';
@@ -29,7 +30,17 @@ class demo_screen extends StatelessWidget{
             CustomTextField(tabController: tabController,text: "Enter Your Age",),
 
           ],),
-          CustomButton(tabController: tabController,text: "NEXT STEP"),
+          Column(
+              children:[
+                StepProgressIndicator(
+                  totalSteps: 6,
+                  currentStep: 3,
+                  selectedColor: Theme.of(context).primaryColor,
+                  unselectedColor: Theme.of(context).backgroundColor,
+                ),
+                SizedBox(height: 10,),
+                CustomButton(tabController: tabController,text: "NEXT STEP"),
+              ]),
         ],
       ),
 

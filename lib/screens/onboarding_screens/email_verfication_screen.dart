@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:step_progress_indicator/step_progress_indicator.dart';
 import 'package:wings_dating_app_flutter/widget/CustomButton.dart';
 import 'package:wings_dating_app_flutter/widget/CustomTextField.dart';
 import 'package:wings_dating_app_flutter/widget/CustomTextHeader.dart';
@@ -20,7 +21,17 @@ class email_verification_screen extends StatelessWidget{
             CustomTextHeader(tabController: tabController,text: "Did you get Email Verification Code?",),
             CustomTextField(tabController: tabController,text: "Enter Your Email Verification Code",),
           ],),
-          CustomButton(tabController: tabController,text: "NEXT STEP"),
+          Column(
+              children:[
+                StepProgressIndicator(
+                  totalSteps: 6,
+                  currentStep: 2,
+                  selectedColor: Theme.of(context).primaryColor,
+                  unselectedColor: Theme.of(context).backgroundColor,
+                ),
+                SizedBox(height: 10,),
+                CustomButton(tabController: tabController,text: "NEXT STEP"),
+              ]),
         ],
       ),
 

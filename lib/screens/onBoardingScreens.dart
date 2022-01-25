@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:wings_dating_app_flutter/screens/onboarding_screens/demo_screen.dart';
 import 'package:wings_dating_app_flutter/screens/onboarding_screens/email_screen.dart';
 import 'package:wings_dating_app_flutter/screens/onboarding_screens/email_verfication_screen.dart';
+import 'package:wings_dating_app_flutter/screens/onboarding_screens/picture_screen.dart';
 import 'package:wings_dating_app_flutter/screens/onboarding_screens/start_screen.dart';
 import 'package:wings_dating_app_flutter/widget/CustomAppBar.dart';
+
+import 'onboarding_screens/bio_screen.dart';
 
 class onBoardingScreens extends StatelessWidget{
 
@@ -13,6 +16,8 @@ class onBoardingScreens extends StatelessWidget{
     Tab(text: 'Email',),
     Tab(text: 'Email Verification',),
     Tab(text: 'Demo Screen',),
+    Tab(text: 'Pictures Screen',),
+    Tab(text: 'Bio Screen',),
 
   ];
   @override
@@ -29,6 +34,8 @@ class onBoardingScreens extends StatelessWidget{
         email_screen(tabController: tabController,),
         email_verification_screen(tabController: tabController),
         demo_screen(tabController: tabController),
+        picture_screen(tabController: tabController),
+        bio_screen(tabController: tabController),
       ],),
     );
     }),

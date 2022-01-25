@@ -25,7 +25,7 @@ const User(this.id, this.name, this.age, this.imageUrls, this.bio, this.jobTitle
   static List<User> users = [
     User(
         0,
-        'Hassan Shabir',
+        'Hassan',
         24,
         [
       'https://scontent.flhe9-1.fna.fbcdn.net/v/t39.30808-6/p526x296/269938137_3056075687993259_5819736042281903073_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=58ytUiZazc0AX8QgGhW&_nc_ht=scontent.flhe9-1.fna&oh=00_AT_w9ffQOkfEUd21jn7-W83_TJWq789uWC00rR3o-8fzEA&oe=61EC7623',
@@ -45,7 +45,7 @@ const User(this.id, this.name, this.age, this.imageUrls, this.bio, this.jobTitle
     ),
     User(
         1,
-        'Zohaib Hassan',
+        'Zohaib',
         27,
         [
           'https://scontent.flhe9-1.fna.fbcdn.net/v/t39.30808-1/p200x200/265717570_4698530040215239_167902073170669759_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=7206a8&_nc_ohc=TeVuMMfpfD0AX-ND3yA&_nc_ht=scontent.flhe9-1.fna&oh=00_AT-hF_EOrQQsX631FTbvYMQAbadmA9sMvzXSLJf6hNen9A&oe=61EADC6C',
@@ -64,7 +64,7 @@ const User(this.id, this.name, this.age, this.imageUrls, this.bio, this.jobTitle
     ),
     User(
         2,
-        'Ali Arslan',
+        'Ali',
         25,
         [
           'https://scontent.flhe9-1.fna.fbcdn.net/v/t39.30808-6/271654022_2587396534736990_5605736271089604122_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=CgnoAITXvWAAX8V2PJT&_nc_ht=scontent.flhe9-1.fna&oh=00_AT8cc0oWtBn7jLpk3bVnwgrozv4Ykyu9ZkVHfV4eiiRe6Q&oe=61EBD1EA',
@@ -84,7 +84,7 @@ const User(this.id, this.name, this.age, this.imageUrls, this.bio, this.jobTitle
     ),
     User(
         3,
-        'Shahbaz Khan',
+        'Shahbaz',
         26,
         [
           'https://scontent.flhe9-1.fna.fbcdn.net/v/t39.30808-6/s206x206/266971499_3226344480930375_2593507138838274045_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=da31f3&_nc_eui2=AeECVwvLdH08zb9fgUDk7wTNaS6bVQciDxxpLptVByIPHLzCmPmkNbYliEzds64RQXlIemKX6T8iWaKoUMAQeJd5&_nc_ohc=gBrFH30rv8sAX8er8yP&_nc_oc=AQlNmzWeCg6b4RTsTXwFricgfgdb0Nh-vTMmrSGDCn1ERpZQvRTiBJ0JoYXEhY0Wv0o&_nc_ht=scontent.flhe9-1.fna&oh=00_AT9FjmZ8SjYWp9P2bZ9_Nmc1RoHEt3yoybuFc4mTAL17SA&oe=61EEAE96',
@@ -103,7 +103,7 @@ const User(this.id, this.name, this.age, this.imageUrls, this.bio, this.jobTitle
     ),
     User(
         4,
-        'Ch Hamza',
+        'Hamza',
         29,
         [
           'https://scontent.flhe9-1.fna.fbcdn.net/v/t31.18172-8/27628711_747321205460849_3982449387026141898_o.jpg?_nc_cat=103&ccb=1-5&_nc_sid=a4a2d7&_nc_eui2=AeE-KA1opoA3Aupj3tWruOuBwVGKUfwA6vrBUYpR_ADq-pYqliAQO4bL-DfkaeKn2oZwQAWoIneE8EKXKS8tHHsQ&_nc_ohc=meji6ime7wYAX_swz9x&_nc_ht=scontent.flhe9-1.fna&oh=00_AT8yRn1OTJKl4_KTVx42QNVenJzvn_XeLmDNeINVRD5ROQ&oe=620EEC75',
@@ -124,7 +124,7 @@ const User(this.id, this.name, this.age, this.imageUrls, this.bio, this.jobTitle
     ),
     User(
         5,
-        'Faaz Hussain',
+        'Faaz',
         25,
         [
           'https://scontent.flhe9-1.fna.fbcdn.net/v/t39.30808-6/s640x640/267803828_2148915735257684_6865708874099354452_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeF87-ywaNzL5c_h1pL_GB5nXdeGoKbK5N9d14agpsrk36PD-KavGz_L1PscF3NtbmnBaUprgjM59PlyPiVgaAbV&_nc_ohc=8IaE1uaJ5O8AX_R4cd5&_nc_ht=scontent.flhe9-1.fna&oh=00_AT-XDHDv7zxF6L4-Xv_BmMqgOWb4DpWJz1s5aFiwUzjQxg&oe=61EFB721',

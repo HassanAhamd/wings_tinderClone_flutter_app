@@ -13,9 +13,11 @@ class start_screen extends StatelessWidget{
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Column(children: [
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
             Container(
-              height: 250,
+              height: 550,
               width: 250,
               child: Image.asset('assets/startintro.png'),
             ),
