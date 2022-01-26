@@ -1,8 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:wings_dating_app_flutter/screens/MatchesScreen.dart';
-import 'package:wings_dating_app_flutter/screens/ProfileScreen.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:wings_dating_app_flutter/cubit/signup_cubit.dart';
+import 'package:wings_dating_app_flutter/repo/auth_repo.dart';
 import 'package:wings_dating_app_flutter/screens/onBoardingScreens.dart';
 
 import 'HomeScreen.dart';
@@ -19,8 +20,10 @@ class _MySplashScreenState extends State<SplashScreen> {
     Timer(Duration(seconds: 3),
             ()=>Navigator.pushReplacement(context,
             MaterialPageRoute(builder:
-                (context) =>
-                    ProfileScreen()
+                (context) => BlocProvider(create: (_) => 
+                SignUpCubit(authRepo: context.read<AuthRepo>()),
+                child: onBoardingScreens(),)
+
             )
         )
     );

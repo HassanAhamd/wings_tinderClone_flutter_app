@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 import 'package:wings_dating_app_flutter/widget/CustomButton.dart';
 
@@ -5,11 +7,14 @@ import 'package:wings_dating_app_flutter/widget/CustomButton.dart';
 class start_screen extends StatelessWidget{
   final tabController;
 
+
   start_screen({
     Key? key,required this.tabController}): super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Padding(padding: const EdgeInsets.symmetric(horizontal: 30,vertical: 10),
+    final hight = MediaQuery.of(context).size.height/3;
+    final width = MediaQuery.of(context).size.width;
+    return Padding(padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -17,8 +22,8 @@ class start_screen extends StatelessWidget{
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
             Container(
-              height: 550,
-              width: 250,
+              height: hight,
+              width: width,
               child: Image.asset('assets/startintro.png'),
             ),
             SizedBox(height: 50,),

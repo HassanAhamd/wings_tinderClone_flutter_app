@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:wings_dating_app_flutter/blocs/Swipe_bloc.dart';
+import 'package:wings_dating_app_flutter/blocs/Swipe_event.dart';
+import 'package:wings_dating_app_flutter/blocs/Swipe_state.dart';
 import 'package:wings_dating_app_flutter/screens/UserProfileScreen.dart';
-import 'package:wings_dating_app_flutter/swipe_blocks/Swipe_bloc.dart';
-import 'package:wings_dating_app_flutter/swipe_blocks/Swipe_event.dart';
-import 'package:wings_dating_app_flutter/swipe_blocks/Swipe_state.dart';
+
 import 'package:wings_dating_app_flutter/widget/CustomAppBar.dart';
 import 'package:wings_dating_app_flutter/widget/ChoiceButton.dart';
 import 'package:wings_dating_app_flutter/widget/UserCard.dart';

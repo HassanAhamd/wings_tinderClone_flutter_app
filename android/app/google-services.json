@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "906311001999",
+    "project_id": "dating-app-flutter-6f6e4",
+    "storage_bucket": "dating-app-flutter-6f6e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906311001999:android:3c4a290e71c25104e88dfa",
+        "android_client_info": {
+          "package_name": "com.wings.wings_dating_app_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906311001999-f4df4ovclmhprdm940ommnq6hbjs6ngj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA95_FhTYQ46FcVf3eE5uAv3NgV-rCKXLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906311001999-f4df4ovclmhprdm940ommnq6hbjs6ngj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

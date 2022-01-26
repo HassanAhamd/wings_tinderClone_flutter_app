@@ -13,7 +13,7 @@ class picture_screen extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return  Padding(padding: const EdgeInsets.symmetric(horizontal: 30,vertical: 10),
+    return  Padding(padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -22,20 +22,24 @@ class picture_screen extends StatelessWidget{
             children: [
               CustomTextHeader(tabController: tabController, text: 'Add 2 or More Pictures'),
               SizedBox(height: 20,),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                CustomImageContainer(tabController: tabController),
-                CustomImageContainer(tabController: tabController),
-                CustomImageContainer(tabController: tabController),
-                CustomImageContainer(tabController: tabController),
-              ],),
-              Row(children: [
-                CustomImageContainer(tabController: tabController),
-                CustomImageContainer(tabController: tabController),
-                CustomImageContainer(tabController: tabController),
-                CustomImageContainer(tabController: tabController),
-              ],),
+              Container(
+                width: MediaQuery.of(context).size.width,
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  CustomImageContainer(),
+                  CustomImageContainer(),
+                  CustomImageContainer(),
+                ],),
+              ),
+              Container(
+                width: MediaQuery.of(context).size.width,
+                child: Row(children: [
+                  CustomImageContainer(),
+                  CustomImageContainer(),
+                  CustomImageContainer(),
+                ],),
+              ),
           ],),
           Column(
               children:[

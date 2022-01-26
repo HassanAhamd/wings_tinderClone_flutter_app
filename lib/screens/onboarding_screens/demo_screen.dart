@@ -8,13 +8,14 @@ import 'package:wings_dating_app_flutter/widget/CustomTextHeader.dart';
 
 class demo_screen extends StatelessWidget{
   final tabController;
+  final ageController = TextEditingController();
 
   demo_screen({
     Key? key,required this.tabController}): super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return  Padding(padding: const EdgeInsets.symmetric(horizontal: 30,vertical: 10),
+    return  Padding(padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -27,7 +28,7 @@ class demo_screen extends StatelessWidget{
             CustomCheckBox(tabController: tabController,text: "Female",),
             SizedBox(height: 100,),
             CustomTextHeader(tabController: tabController,text: "What\'s Your Age?",),
-            CustomTextField(tabController: tabController,text: "Enter Your Age",),
+            CustomTextField(tabController: tabController,text: "Enter Your Age", txtEditingController: ageController,),
 
           ],),
           Column(
